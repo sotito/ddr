@@ -1,37 +1,466 @@
+
+
+html{
+   overflow: scroll;
+   margin: auto;   
+    width: 1280px; 
+    border: 1px solid red;
+}
+body{
+  background: #eaeaea url('http://compactpowerrents.com/public/img/bg_content.gif');
+
+}
+
 .content {
-  margin-top: 50px;
+margin: 0;
+padding: 0;
+}
+
+li.active.rental-repair-service {
+    width: 250px;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+}
+li.rental-repair-service {
+    width: 250px;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+}
+.row.row-end {
+   
+    background-color: black;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #3f4043;
+    width: 1280px;
+    margin: 0; 
+    padding: 0;
+}
+.row.row-end-footer {
+   
+    background-color: black;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #3f4043;
+    width: 1280px;
+    margin: 0; 
+    padding: 0;
+}
+
+
+section.row.ng-scope {
+    margin: 0;
+    padding: 0;
+    width: 1280px;
+}
+.ng-scope {
+    z-index: 500;
+    position: relative;
+}
+
+section.container {
+    margin: 0;
+    padding: 0;
+   
+    width: 1280px !important;
 }
 .undecorated-link:hover {
   text-decoration: none;
 }
-[ng\:cloak],
-[ng-cloak],
-[x-ng-cloak],
-.ng-cloak,
-.x-ng-cloak {
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }
-.header-profile-image {
-  opacity: 0.8;
-  height: 28px;
-  width: 28px;
-  border-radius: 50%;
-  margin-right: 5px;
+.ng-invalid.ng-dirty {
+  border-color: #FA787E;
 }
-.open .header-profile-image,
-a:hover .header-profile-image {
-  opacity: 1;
+.ng-valid.ng-dirty {
+  border-color: #78FA89;
 }
-.user-header-dropdown-toggle {
-  padding-top: 11px !important;
-  padding-bottom: 11px !important;
+
+p.p.p-equipment {
+       padding-top: 15px;
+    padding-left: 35px;
+    font-size: 15px;
 }
-.error-text {
-  display: none;
+p.p.p-location {
+       padding-top: 15px;
+    padding-left: 5px;
+    font-size: 15px;
 }
-.has-error .help-block.error-text {
-  display: block;
+p.p.p-delivery {
+       padding-top: 15px;
+    padding-left: 25px;
+    font-size: 15px;
 }
-.has-error .help-inline.error-text {
-  display: inline;
+p.p.p-about {
+       padding-top: 15px;
+    padding-left: 25px;
+    font-size: 15px;
 }
+
+
+.jumbotron{
+      background-image: url("https://scontent-mia1-1.xx.fbcdn.net/hphotos-xpa1/t31.0-8/s2048x2048/11289377_951624791525108_3971017954838145094_o.jpg");
+    background-repeat: no-repeat;
+    background-size: 1320px 500px;
+    height: 500px;
+    width: 1280px;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+}
+
+    
+li.li.li-equipment {
+    background: transparent url('http://compactpowerrents.com/public/img/icon-equipmentheader.png') 5px center no-repeat;
+    width: 150px;
+     background-position-x: 15px;
+    background-position-y: 30px;
+
+}
+li.li.li-services {
+    background: transparent url('/modules/core/client/img/brand/about.png') 5px center no-repeat;
+    width: 130px;
+    background-position-x: 5px;
+    background-position-y: 25px;
+}
+
+p.p.p-services {
+    padding-left: 20px;
+    padding-top: 17px;
+}
+li.li.li-location {
+    background: transparent url('http://compactpowerrents.com/public/img/icon_locations-nav.png') 5px center no-repeat;
+}
+
+li.li.li-delivery {
+    background: transparent url('/modules/core/client/img/brand/delivery2.png') 5px center no-repeat;
+}
+li.li.li-about {
+    background: transparent url('/modules/core/client/img/brand/service.png') 5px center no-repeat;
+}
+
+
+.row.register-row {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    width: 1280px;
+    margin-top: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    color: red;
+    background-image: url('http://www.pixeden.com/media/k2/galleries/44/003-metal-and-carbon-fiber-pattern-background-texture.jpg');
+}
+
+
+form.navbar-form.navbar-left.ng-pristine.ng-valid {
+    width: 1280px;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+}
+
+.row.seventh-row {
+    width: 1280px;
+    padding: 0;
+    margin: 0;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 100px;
+}
+.thumbnail{
+    height: 500px;
+}
+
+
+
+
+.btn-submit{
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.container-fluid.navbar-container {
+  background-color: #FF0011;
+  height: 75px;
+    text-align: center;
+
+}
+.navbar-default .navbar-nav > li > a {
+    color: #000;
+    border-right: 1px solid;
+    height: 75px;
+    font: 700 14px 'pill-gothic-300mg-n3', 'pill-gothic-300mg', sans-serif;
+    text-transform: uppercase;
+   
+
+
+}
+.row.fifth-row {
+  background-color: #2E2E2E;
+    color: white;
+    text-align: center;
+    background-image: url('http://www.pixeden.com/media/k2/galleries/44/003-metal-and-carbon-fiber-pattern-background-texture.jpg');
+    height: 25px;
+    padding: 0;
+    margin: 0;
+    width: 1280px;
+}
+.row.sixth-row {
+    margin: 0;
+    padding: 0;
+    width: 1280px;
+    border-radius: 0;
+}
+
+.col-xs-8.navbar-col8 {
+    height: 70px;
+    margin: 0;
+    padding: 0;
+    margin-left: -25px;
+    width: 770px;
+}
+.col-xs-4.phone {
+    color: white;
+    width: 400px;
+    text-align: right;
+}
+.col-xs-4.navbar-top {
+   background-color: #2E2E2E;
+   color: white;
+}
+
+.row.first-row {
+    margin: 0;
+    padding: 0;
+    width: 1280px;
+}
+div.row.fourth-row {
+    background-color: red;
+    margin: 0;
+    padding: 0;
+    width: 1280px;
+    height: 75px;
+    z-index: 0;
+}
+
+.row.third-row {
+background-image: url('http://www.pixeden.com/media/k2/galleries/44/003-metal-and-carbon-fiber-pattern-background-texture.jpg');
+height: 75px;
+width: 1280px;
+margin: 0;
+padding: 0;
+z-index: 0;
+
+}
+img.img.main-logo {
+    height: 180px;
+    margin-top: -30px;
+    z-index: 19;
+    width: 500px;
+}
+img.img.pickup-logo {
+    height: 180px;
+    margin-top: -30px;
+    z-index: 19;
+    width: 500px;
+}
+
+
+
+h4.h4.phone {
+
+  font-size: 48px;
+}
+
+.col-xs-4.icon-bar {
+    z-index: 10;
+    margin: 0;
+    padding-right: 0;
+    width: 535px;
+}
+.carousel.carousel-equipment {
+    padding: 40px;
+    padding-top: 0;
+    margin: 0;
+    width: 1280px;
+    border: 1px solid transparent;
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: 800;
+    color: #FF0011;
+    height: 170px;
+    margin-top: 50px;
+}
+a.left.carousel-control {
+    margin: 0;
+    padding: 0;
+    width: 0;
+    background: transparent;
+
+}
+a.right.carousel-control {
+    
+        margin: 0;
+    padding: 0;
+    width: 0;
+    background: transparent;
+ }
+.row.rental-repair-service {
+    margin: 0;
+    padding: 0;
+    width: 1280px;
+    margin-top: 25px;
+    background-color: white;
+}
+.row.carousel-text.ng-scope {
+    margin: 0;
+    padding: 0;
+}
+.col-xs-2.ng-binding {
+
+    margin-right: -8px;
+}
+.panel.panel-default {
+   padding: 0;
+    margin: 0;
+    width: 1280px;
+}
+.panel-body {
+    padding: 0;
+    margin: 0;
+    width: 1280px;
+}
+
+button.btn.btn-login {
+    background-color: transparent;
+    border: 1px solid red;
+    color: white;
+    padding: 5px;
+    margin: 7px;
+    border-radius: 0;
+}
+
+.col-xs-4.login {
+    text-align: right;
+}
+
+.btn-default{
+  border-radius: 0;
+}
+
+
+.navbar-default {
+     border: 0;
+    width: 100%;
+    background-image: url("https://cdn.milwaukeetool.com/~/media/Images/Miscellaneous/logo-milwtool_header.png");
+    background-repeat: no-repeat;
+    background-position-x: 500px;
+    margin-bottom: 0;
+    height: 70px;
+}
+
+/*.container-fluid.navbar-container {
+    background-image: url("https://cdn.milwaukeetool.com/~/media/Images/Miscellaneous/logo-milwtool_header.png");
+    background-repeat: no-repeat;
+    background-position-x: 450px;
+    background-size: 340px 75px;
+}*/
+.div.row.sixth-row {
+  width: 1280px; 
+  height: 25px;
+}
+.row.sixth-row.search-row {
+    text-align: center;
+}
+.row.contact-us-row {
+    padding: 0;
+    margin: 0;
+    width: 1280px;
+}
+div#bs-example-navbar-collapse-1 {
+    width: 100%;
+    padding: 0;
+}
+
+.row.seventh-row {
+    width: 1280px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-top: -160px;
+
+}
+
+.row.seventh-row-two {
+
+    width: 1280px;
+    height: 125px;
+    margin: 0;
+    padding: 0;
+    background-image: url('http://www.pixeden.com/media/k2/galleries/44/003-metal-and-carbon-fiber-pattern-background-texture.jpg');
+    z-index: 500;
+position: relative;
+
+
+
+}
+.img.credit-application{
+    height: 90px;
+    width: 250px;
+    background-size: 248px 92px;
+    background-position-y: -4px;
+    border: 0;
+}
+
+.row.eigth-row {
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+    height: 50px;
+    background-color:transparent;
+    margin-bottom: -60px;
+}
+.row.nineth-row {
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+    height: 50px;
+    background-color:transparent;
+    margin-bottom: -120px;
+}
+img.img.newsletter-mail {
+    padding: 0;
+    margin: 0;
+    height: 95px;
+    width: 150px;
+    background-position-x: 28px;
+    background-position-y: 108px;
+    z-index: 25;
+    margin-top: -15px;
+}
+
+.col-xs-6.email-submit {
+    right: 35%;
+    border-radius: 0;
+}
+.col-xs-6.col-xs-3 {
+    color: red;
+}
+p.p.copy-rights {
+    color: white;
+    text-align: center;
+}
+.glyphicon-chevron-left:before {
+    display: none; 
+
+    
+}
+.glyphicon-chevron-right:before {
+   display: none;
+}
+ 
