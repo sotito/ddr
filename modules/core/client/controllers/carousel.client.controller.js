@@ -9,6 +9,18 @@ angular.module('core').controller('CarouselDemoCtrl', function ($scope){
     image: '/modules/core/client/img/brand/banner2.png'
   }, {
     image: '/modules/core/client/img/brand/banner3.png'
+  }, {
+    image: '/modules/core/client/img/brand/banner4.png'
+  }, {
+    image: '/modules/core/client/img/brand/banner5.png'
+  }, {
+    image: '/modules/core/client/img/brand/banner6.png'
+  }, {
+    image: '/modules/core/client/img/brand/banner7.png'
+  }, {
+    image: '/modules/core/client/img/brand/banner8.png'
+  }, {
+    image: '/modules/core/client/img/brand/banner9.png'
   }/*, {
     image: 'http://www.portableaircompressorsite.com/wp-content/uploads/2014/12/Makita_MAC700_Big_Bore_2.0_HP_Air_Compressor_Small.jpg',
     text: 'AIR COMPRESSOR'

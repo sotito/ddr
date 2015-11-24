@@ -52,10 +52,12 @@ section.row.ng-scope {
     margin: 0;
     padding: 0;
     width: 1280px;
+
 }
 .ng-scope {
     z-index: 500;
     position: relative;
+    padding-top: 5px;
 }
 
 section.container {
@@ -399,7 +401,7 @@ div#bs-example-navbar-collapse-1 {
 .row.seventh-row-two {
 
     width: 1280px;
-    height: 125px;
+    height: 150px;
     margin: 0;
     padding: 0;
     background-image: url('http://www.pixeden.com/media/k2/galleries/44/003-metal-and-carbon-fiber-pattern-background-texture.jpg');
