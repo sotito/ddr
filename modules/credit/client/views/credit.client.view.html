@@ -1,188 +1,99 @@
-<section class="row ng-scope" ng-controller="ModalDemoCtrl">
-<div class="row credit-form">
-  <h1>Credit Form</h1>
-</div>
+<section class="row modal-ng-scope">
 
-<div class="row company-name">
 
-  <div class="col-md-2">
-    <p>Company Name: </p>
-
+  <div class="modal-header">
+    <h3 class="modal-title">Contact Us</h3>
   </div>
-  <div class="col-md-10">
-    <input type="text" class="form-control" placeholder="Text input">
+  <div class="modal-body">
 
 
-  </div>
 
 
-</div>
 
-<div class="row phone-number">
+    <div class="row">
+      <div class="col-md-12">
 
-   <div class="col-md-2">
-    <p>Phone: </p>
-
-  </div>
-  <div class="col-md-4">
-    <input type="text" class="form-control" placeholder="Text input">
-
-
-  </div>
-  <div class="col-md-2">
-    <p>Fax: </p>
-
-  </div>
-  <div class="col-md-4">
-    <input type="text" class="form-control" placeholder="Text input">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label for="inputFullName" class="col-xs-2 control-label">Name*</label>
+            <div class="col-xs-10">
+              <input type="text" class="form-control" id="inputFullName" placeholder="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-xs-2 control-label">Email*</label>
+            <div class="col-xs-10">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="">
+            </div>
+          </div>
 
 
-  </div>
-
-</div>
-
-<div class="row company-name">
-
-  <div class="col-md-2">
-    <p>Fisical Address: </p>
-
-  </div>
-  <div class="col-md-10">
-    <input type="text" class="form-control" placeholder="Text input">
 
 
-  </div>
+
+          <div class="form-group">
+
+            <label for="inputPhone" class="col-xs-2 control-label">Phone</label>
+
+            <div class="col-xs-2">
+              <input type="text" class="form-control" placeholder="" id="inputPhone">
+            </div>
+            <div class="col-xs-3">
+              <input type="text" class="form-control" placeholder="">
+            </div>
+            <div class="col-xs-4">
+              <input type="text" class="form-control" placeholder="">
+            </div>
+
+          </div>
 
 
-</div>
 
-<div class="row owners-name">
+          <div class="form-group">
+            <label for="inputSubject" class="col-xs-2 control-label">Subject</label>
+            <div class="col-xs-10">
+              <input type="text" class="form-control" id="inputSubject" placeholder="">
+            </div>
+          </div>
 
-  <div class="col-md-2">
-    <p>Owner's Name: </p>
+          <div class="form-group">
+            <label for="routeTo" class="col-xs-2 control-label">Department</label>
+            <div class="col-xs-10">
+          <select class="form-control" id="routeTo">
+            <option>Rental</option>
+            <option>Sale</option>
+            <option>Service</option>
+          </select>
+              </div>
 
-  </div>
-  <div class="col-md-10">
-    <input type="text" class="form-control" placeholder="Text input">
-
-
-  </div>
-
-
-</div>
-<div class="row authorize-name">
-
-  <div class="col-md-2">
-    <p>Authorize Personel: </p>
-
-  </div>
-  <div class="col-md-10">
-    <input type="text" class="form-control" placeholder="Text input">
+          </div>
 
 
-  </div>
+
+          <div class="form-group">
+            <label for="inputContactEmail" class="col-xs-2 control-label">Message</label>
+            <div class="col-xs-10">
+              <textarea class="form-control" rows="3" id="inputContactEmail" placeholder="*Please enter your contract #"></textarea>
+            </div>
+          </div>
 
 
-</div>
-
-<div class="row social-security">
-
-   <div class="col-md-2">
-    <p>Social Security: </p>
-
-  </div>
-  <div class="col-md-4">
-    <input type="text" class="form-control" placeholder="Text input">
 
 
-  </div>
-  <div class="col-md-2">
-    <p>Lic: </p>
-
-  </div>
-  <div class="col-md-4">
-    <input type="text" class="form-control" placeholder="Text input">
 
 
-  </div>
 
 
-</div>
-
-<div class="row">
-  <div class="col-md-2">
-    <p>Organization: </p>
-
-  </div>
-
-  <div class="col-md-10">
-    <label class="radio-inline">
-  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Individual
-</label>
-<label class="radio-inline">
-  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Society
-</label>
-<label class="radio-inline">
-  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Corportation
-</label>
-  </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-12">
-      <h2>Requirments</h2>
-
+        </form>
+      </div>
     </div>
   </div>
-
-
-
-<div class="row">
-    <div class="col-md-12">
-      <h2>Bank Reference: </h2>
-
-    </div>
-    <div class="col-md-4">
-      <p>Bank: </p>
-      <input type="text" class="form-control" placeholder="Text input">
-
-    </div>
-    <div class="col-md-4">
-      <p>Account Number: </p>
-      <input type="text" class="form-control" placeholder="Text input">
-
-
-    </div>
-    <div class="col-md-4">
-      <p>Phone: </p>
-      <input type="text" class="form-control" placeholder="Text input">
-
-    </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+    <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
   </div>
 
 
-  <div class="row">
-    <div class="col-md-12">
-      <h2>Credit Reference: </h2>
-
-    </div>
-    <div class="col-md-4">
-      <p>Institution: </p>
-      <input type="text" class="form-control" placeholder="Text input">
-
-    </div>
-    <div class="col-md-4">
-      <p>Contact: </p>
-      <input type="text" class="form-control" placeholder="Text input">
-
-
-    </div>
-    <div class="col-md-4">
-      <p>Phone: </p>
-      <input type="text" class="form-control" placeholder="Text input">
-
-    </div>
-  </div>
 
 </section>
 

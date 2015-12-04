@@ -1,171 +1,328 @@
 <section class="row data-ng-scope" data-ng-controller="HomeController">
   <!-- DE DIEGO RENTAL-->
   <div class="row first-row">
+  </div>
 
-    <div class="row third-row">
-      <div class=" col-xs-4">
-        .
-
-
-      </div>
-      <div class=" col-xs-4 phone">
-        <h4 class="h4 phone">787-781-3320</h4>
-
-
-      </div>
-
-      <div class=" col-xs-4 login">
-        <button type="button" class="btn btn-login">LogIn</button>
-
-
-      </div>
-
-    </div>
-
-    <div class="row fourth-row">
-      <div class=" col-xs-4 icon-bar">
-
-        <img class="img main-logo" src="/modules/core/client/img/brand/newlogo.png">
-
-
-      </div>
-      <div class=" col-xs-8 navbar-col8">
-
-
-        <nav class="navbar navbar-default">
-          <div class="container-fluid navbar-container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li class="li li-equipment"><a href="#"><p class="p p-equipment">Equipment</p></a></li>
-                <li class="li li-services"><a href="#"><p class="p p-services">Services</p></a></li>
-                <li class="li li-location"><a href="#"><p class="p p-location">Location</p></a></li>
-                <li class="li li-delivery"><a href="#"><p class="p p-delivery">Delivery</p></a></li>
-                <li class="li li-about"><a href="#"><p class="p p-about">About Us</p></a></li>
-
-              </ul>
-
-
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
-
-      </div>
-
-    </div>
-
-    <div class="row fifth-row">
-      <p>Equipment Rental for your Commerical Needs and Homeowner Projects</p>
-    </div>
-
-    <div class="row sixth-row">
-      <div class="jumbotron">
-        <div class="container">
-
-        </div>
-      </div>
+  <div class="row third-row">
+    <div class=" col-xs-4">
+      .
 
 
     </div>
+    <div class=" col-xs-4 phone">
+      <h4 class="h4 phone">787-781-3320</h4>
 
-    <div class="row seventh-row">
-      <div class=" col-xs-4">
-        <a href="/">
-          <img src="/modules/core/client/img/brand/test2.png" class="img credit-application">
+
+    </div>
+    <a ng-click="open('creditbackup')">
+    <div class=" col-xs-4 login">
+      <button type="button" class="btn btn-login">LogIn</button>
+
+
+    </div>
+      </a>
+
+  </div>
+
+  <div class="row fourth-row">
+    <div class=" col-xs-4 icon-bar">
+
+
+      <img class="img main-logo" src="/modules/core/client/img/brand/newlogo.png">
+
+
+    </div>
+    <div class=" col-xs-8 navbar-col8">
+
+
+
+
+
+
+      <nav class="navbar navbar-default">
+        <div class="container-fluid navbar-container">
+
+
+
+
+
+
+
+
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+
+              <li class="li li-equipment"  uib-dropdown on-toggle="toggled(open)">
+                <a href id="simple-dropdown" uib-dropdown-toggle>
+                  <p  class="p p-equipment">
+                    EQUIPMENT
+
+                  </p>
+                </a>
+                <ul class="uib-dropdown-menu" aria-labelledby="simple-dropdown">
+                  Aerial Work Platforms
+                  Air Compressors & Air Tools
+                  Compaction
+                  Concrete & Masonry
+                  Earthmoving Equipment
+                  Forklifts & Material Handling
+                  Lawn & Landscape
+                  Light Towers & Generators
+                  Power & HVAC
+                  Power Tools & Surveying
+                  Pumps
+                  Surface Preparation
+                  Trench Safety & Shoring
+                  Trucks & Trailers
+                  Welders & Accessories
+                  Other Equipment
+                </ul>
+
+              </li>
+
+
+
+
+
+              <li class="li li-services" uib-dropdown on-toggle="toggled(open)">
+                <a href id="simple-dropdown1" uib-dropdown-toggle>
+                  <p class="p p-services">
+                    Services
+                  </p>
+                </a>
+
+
+
+
+
+                <ul class="uib-dropdown-menu" aria-labelledby="simple-dropdown1">
+
+                  service menu
+
+                </ul>
+
+
+              </li>
+
+
+
+
+
+
+              <li class="li li-location" uib-dropdown on-toggle="toggled(open)">
+                <a href id="simple-dropdown2" uib-dropdown-toggle>
+                  <p class="p p-location">
+                    Location
+                  </p>
+                </a>
+
+
+
+
+
+                <ul class="uib-dropdown-menu" aria-labelledby="simple-dropdown2">
+                  <li class="li li-location">
+                    <a href="" ng-click="open('creditsanjuan')"> <p class="p p-location">San Juan</p></a>
+                  </li>
+
+                  <li class="li li-location">
+                    <a href="" ng-click="open('creditbayamon')"> <p class="p p-location">Bayamon</p></a>
+                  </li>
+
+
+
+                </ul>
+
+
+              </li>
+
+
+
+              <li class="li li-delivery" uib-dropdown on-toggle="toggled(open)">
+                <a href id="simple-dropdown3" uib-dropdown-toggle>
+                  <p class="p p-delivery">
+                   Delivery
+                  </p>
+                </a>
+
+
+
+
+
+                <ul class="uib-dropdown-menu" aria-labelledby="simple-dropdown3">
+
+                  delivery menu
+
+                </ul>
+
+
+              </li>
+
+
+              <li class="li li-about" uib-dropdown on-toggle="toggled(open)">
+                <a href id="simple-dropdown4" uib-dropdown-toggle>
+                  <p class="p p-about">
+                   About
+                  </p>
+                </a>
+
+
+
+
+
+                <ul class="uib-dropdown-menu" aria-labelledby="simple-dropdown4">
+
+                  about menu
+
+                </ul>
+
+
+              </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </ul>
+
+
+
+
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+    </div>
+
+  </div>
+
+  <div class="row fifth-row">
+    <p>Equipment Rental for your Commerical Needs and Homeowner Projects</p>
+  </div>
+
+  <div class="row sixth-row">
+    <div class="jumbotron">
+      <div class="container">
+
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="row seventh-row">
+
+    <div class=" col-xs-4">
+
+
+
+      <a ng-click="open('creditbackup')">
+        <img src="/modules/core/client/img/brand/test2.png" class="img credit-application">
+      </a>
+
+    </div>
+    <div class=" col-xs-4">
+ <a href="" ng-click="open('credit')">
+      <img src="/modules/core/client/img/brand/contactus.png" class="img credit-application">
+ </a>
+    </div>
+    <div class=" col-xs-4">
+      <a ng-click="open('creditbackup')">
+      <img src="/modules/core/client/img/brand/getaquote.png" class="img credit-application">
         </a>
+    </div>
 
-      </div>
-      <div class=" col-xs-4">
-
-        <img src="/modules/core/client/img/brand/contactus.png" class="img credit-application">
-      </div>
-      <div class=" col-xs-4">
-       <img src="/modules/core/client/img/brand/getaquote.png" class="img credit-application">
-     </div>
+    <div class=" col-xs-12">
+      <!--<img src="/modules/core/client/img/brand/banner-cover.png" class="img banner-cover">-->
+    </div>
 
 
 
-   </div>
 
-   <div class="row seventh-row-two">
+  </div>
+
+  <div class="row seventh-row-two">
 
 
 
     <div data-ng-controller="HomeCarouselController">
 
-        <carousel interval="myInterval" no-wrap="noWrapSlides">
-          <slide ng-repeat="slide in slides" active="slide.active" index="slide.id">
+      <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
+        <uib-slide ng-repeat="slide in slides" active="slide.active" index="slide.id">
 
-              <img ng-src="{{slide.image}}">
+          <img ng-src="{{slide.image}}">
 
 
-          </slide>
-        </carousel>
+        </uib-slide>
+      </uib-carousel>
 
     </div>
 
-   </div>
 
 
 
 
 
-  <div class="row rental-repair-service">
-
-
-
-    <div class=" col-xs-12">
-      <ul class="nav nav-tabs rent-service-sale">
-        <li role="presentation" class="active rental-repair-service"><a href="#">Rental</a></li>
-        <li role="presentation" class="rental-repair-service"><a href="#">Service</a></li>
-        <li role="presentation" class="rental-repair-service"><a href="#">Sales</a></li>
-      </ul>
-    </div>
-    <div class=" col-xs-4 find-equipment">
-      <div class="thumbnail">
-        <img src="/modules/core/client/img/brand/find-equipment.png" alt="..." style="height:290px;width:390px;">
-        <div class="caption">
-          <h3>Find Equipment</h3>
-          <p>Browse our extensive inventory</p>
-          <ul>
-            <li>Search Rental Equipment</li>
-            <li>Buy Used Equipment</li>
-            <li>Request Print Catalogs</li>
-          </ul>
-
-        </div>
-      </div>
-    </div>
-    <div class=" col-xs-4 call-to-rent">
-      <div class="thumbnail">
-        <img src="/modules/core/client/img/brand/call-to-rent.png" alt="...">
-        <div class="caption">
-          <h3>Call To Rent Now</h3>
-          <p>Reserve your rental & arrange delivery.</p>
-          <p>Call 787-781-3320</p>
-
-        </div>
-      </div>
-    </div>
-    <div class=" col-xs-4 schedule-delivery">
-      <div class="thumbnail">
-        <img src="/modules/core/client/img/brand/delivery-truck.png" alt="...">
-        <div class="caption">
-          <h3>Schedule Delivery</h3>
-          <p>Our Delivery Service technician will deliver the equipment directly to your jobsite and provide an overview of the equipment’s basic operation. Delivery is available 7 days a week!</p>
-
-        </div>
-      </div>
-    </div>
   </div>
 
 
 
 
 
+  <div class="row rental-repair-service-tab">
+
+
+
+    <div class="col-xs-12 rent-sale-serv-pane">
+      <uib-tabset justified="true">
+        <uib-tab heading="Rental">
+
+
+          <div class="row rental-repair-service">
+
+            <div class=" col-xs-4 rental-col">
+              <div class="thumbnail rental-thumb">
+                <img src="/modules/core/client/img/brand/find-equipment.png" alt="...">
+                <div class="caption rental-tab">
+
+                  <h3 class="h3 rental-find-tab">Find Equipment</h3>
+
+
+                </div>
+              </div>
+            </div>
+            <div class=" col-xs-4 rental-col">
+              <div class="thumbnail rental-thumb">
+                <img src="/modules/core/client/img/brand/call-to-rent.png" alt="...">
+                <div class="caption rental-tab">
+                  <h3 class="h3 rental-call-tab">Call To Rent Now</h3>
+
+
+                </div>
+              </div>
+            </div>
+            <div class=" col-xs-4 rental-col">
+              <div class="thumbnail rental-thumb">
+                <img src="/modules/core/client/img/brand/delivery-truck.png" alt="...">
+                <div class="caption rental-tab">
+                  <h3 class="h3 rental-delivery-tab">Schedule Delivery</h3>
+
+                </div>
+              </div>
+            </div>
+          </div>
 
 
 
@@ -173,134 +330,280 @@
 
 
 
-  <div class="row eigth-row">
-   </div>
+
+        </uib-tab>
 
 
-   <!-- <div class="carousel carousel-equipment">
+        <uib-tab heading="Sales">
 
-    <div ng-controller="CarouselDemoCtrl">
-      <div style="height: 160px">
-        <carousel interval="myInterval">
-          <slide ng-repeat="slide in slides" active="slide.active">
 
-            <div class="row carousel-text">
-              <div class=" col-xs-2">{{slide.text}}</div>
-              <div class=" col-xs-2">{{slides[$index+1].text}}</div>
-              <div class=" col-xs-2">{{slides[$index+2].text}}</div>
-              <div class=" col-xs-2">{{slides[$index+3].text}}</div>
-              <div class=" col-xs-2">{{slides[$index+4].text}}</div>
-              <div class=" col-xs-2">{{slides[$index+5].text}}</div>
+
+          <div class="row rental-repair-service">
+
+            <div class=" col-xs-4 find-equipment">
+              <div class="thumbnail">
+                <img src="" alt="..." style="height:290px;width:390px;">
+                <div class="caption">
+                  <h3>Service Tab</h3>
+                  <p>Sales #1</p>
+                  <ul>
+                    <li>...</li>
+                    <li>...</li>
+                    <li>...</li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+            <div class=" col-xs-4 call-to-rent">
+              <div class="thumbnail">
+                <img src="" alt="...">
+                <div class="caption">
+                  <h3>Sales #2</h3>
+                  <p>...</p>
+
+                </div>
+              </div>
+            </div>
+            <div class=" col-xs-4 schedule-delivery">
+              <div class="thumbnail">
+                <img src="" alt="...">
+                <div class="caption">
+                  <h3>Sales #3</h3>
+                  <p>...</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </uib-tab>
+
+
+        <uib-tab heading="Service">
+
+          <div class="row rental-repair-service">
+
+            <div class=" col-xs-4 find-equipment">
+              <div class="thumbnail">
+                <img src="" alt="..." style="height:290px;width:390px;">
+                <div class="caption">
+                  <h3>Service Tab</h3>
+                  <p>Service #1</p>
+                  <ul>
+                    <li>...</li>
+                    <li>...</li>
+                    <li>...</li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+            <div class=" col-xs-4 call-to-rent">
+              <div class="thumbnail">
+                <img src="" alt="...">
+                <div class="caption">
+                  <h3>Service #2</h3>
+                  <p>...</p>
+
+                </div>
+              </div>
+            </div>
+            <div class=" col-xs-4 schedule-delivery">
+              <div class="thumbnail">
+                <img src="" alt="...">
+                <div class="caption">
+                  <h3>Service #3</h3>
+                  <p>...</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </uib-tab>
+      </uib-tabset>
+    </div>
+
+  </div>
+
+
+
+  <div class="row misc-item">
+    <div class="col-xs-8 misc-col-one">
+
+      <div class="row misc-item-header">
+        <div class="col-xs-12 header-classified">
+          <div class="page-header">
+            <h1>Classifieds</h1>
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="row misc-item-row">
+        <div class="col-xs-12 latest-clasified">
+
+
+        <section ng-controller="ArticlesController" ng-init="find()">
+          <div class="list-group">
+            <a ng-repeat="article in articles" ui-sref="articles.view({articleId: article._id})" class="list-group-item">
+
+              <h4 class="list-group-item-heading" ng-bind="article.title"></h4>
+             <p>Price: $ {{article.price}}</p>
+
+              <p>Contact: {{article.contactname}}</p>
+              <p>Phone: {{article.contactphone}}</p>
+              <p>Description: {{article.content}}</p>
+              <small class="list-group-item-text">
+                Posted on
+                <span ng-bind="article.created | date:'mediumDate'"></span>
+                by
+                <span ng-bind="article.user.displayName"></span>
+
+              </small>
+            </a>
+          </div>
+          <div class="alert alert-warning text-center" ng-if="articles.$resolved && !articles.length">
+            No articles yet, why don't you <a ui-sref="articles.create">create one</a>?
+          </div>
+        </section>
+
+
+
+
+
+
+          <!--<div ng-repeat="classified in classifieds" class="row classifieds">-->
+            <!--<div class="col-xs-3">-->
+              <!--<img src="" class="img-item-one-classified">-->
+
+
+
+            <!--</div>-->
+            <!--<div class="col-xs-9">-->
+
+              <!--<p>Title:  {{classified.title}}</p>-->
+              <!--<p>Price: ${{classified.price}}</p>-->
+              <!--<p>{{classified.contactname}}</p>-->
+              <!--<p>{{classified.contactphone}}</p>-->
+
+              <!--<p>Description: {{classified.description}}</p>-->
+
+
+
+              <!--<hr>-->
+            <!--</div>-->
+
+
+
+
+          <!--</div>-->
+
+
+
+
+
+
+
+        <!--</div>-->
+
+
+
+      </div>
+
+
+
+
+    </div>
+    <div class="col-xs-4 misc-col-two">
+
+
+      <div class="row">
+
+        <div class="col-sm-12 video-promotion">
+
+          <div class="row video-header">
+            <div class="col-sm-12 video-header-promotion">
+              <h1>Promotion!</h1>
+
             </div>
 
-
-
-
-            <div class="" style="width:1200px;margin:0;">
-
-              <img ng-src="{{slide.image}}" width="150px" style="float:left; margin-right:25px; margin-left:33px; ">
-
-
-              <img ng-src="{{slides[$index+1].image}}" width="150px" style="float:left; margin-right:20px; margin-left:20px; ">
-
-
-
-              <img ng-src="{{slides[$index+2].image}}" width="150px" style="float:left; margin-right:20px; margin-left:20px; ">
-
-
-
-              <img ng-src="{{slides[$index+3].image}}" width="150px" style="float:left; margin-right:20px; margin-left:20px; ">
-
-
-              <img ng-src="{{slides[$index+4].image}}" width="150px" style="float:left; margin-right:20px; margin-left:20px; ">
-
-              <img ng-src="{{slides[$index+5].image}}" width="150px" style="float:left; margin-right:20px; margin-left:20px; ">
-
-
-
-
-
-
+            <div class="row">
+              <div class="col-sm-12">
+                <!--<iframe width="%100" height="%100" src="https://www.youtube.com/embed/bCehkkTTeMk" frameborder="0" allowfullscreen></iframe>-->
+              </div>
             </div>
-          </slide>
-        </carousel>
+
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <p>Dustless Blasting en Acción disponible para la Renta</p>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+        </div>
       </div>
+
+
+
+
+
+
     </div>
-  </div> -->
-
- <div class="row nineth-row"></div>
-
-
-
-
-
-
-  <div class="row register-row">
-      <h5 class="h5 register-email">Sign Up for Savings & News!</h5>
-
-  <div class=" col-xs-6"><img src="/modules/core/client/img/brand/newsletter.png" class="img newsletter-mail"></div>
-  <div class=" col-xs-6 email-submit">
-
-     <form class="form-inline">
-      <div class="form-group">
-
-        <input type="email" class="form-control email-subscribe" id="exampleInputEmail2" placeholder="">
-      </div>
-      <button type="submit" class="btn btn-default btn-subscribe">subscribe</button>
-    </form>
-
-      <!--  <img class="img go-sub" src="/modules/core/client/img/brand/go.png">
-
- -->
-  </div>
-
-
-
-
-
-
-
-
-
-
-
 
   </div>
+
+
+
+
 
 
 
   <div class="row row-end">
-   <div class="col-xs-6  col-xs-3"><dl>
-    <dt>Our Distributors</dt>
-    <dd>
-
-      <ul>
-        <li>.</li>
 
 
-      </ul>
+    <div class="row register-row">
+
+
+      <div class="col-xs-2 phone-footer-img">
+        <a ng-click="open('creditphone')">
+        <img src="/modules/core/client/img/brand/phone-footer.png" class="img phone-footer">
+          </a>
+      </div>
+
+      <div class="col-xs-2">
+        <a ng-click="open('credithours')">
+        <img src="/modules/core/client/img/brand/working-hours-footers.png" class="img phone-footer">
+          </a>
+      </div>
+      <div class="col-xs-2">
+        <a ng-click="open('creditnewsletter')">
+        <img src="/modules/core/client/img/brand/newsletter-footer.png" class="img phone-footer">
+          </a>
+      </div>
+      <div class="col-xs-2">
+       <a href="https://www.facebook.com/De-Diego-Rental-214705721883689/">
+         <img src="/modules/core/client/img/brand/facebook-footer.png" class="img phone-footer">
+         </a>
+      </div>
+      <div class="col-xs-2">
+        <img src="/modules/core/client/img/brand/home-footer.png" class="img phone-footer">
+      </div>
 
 
 
-    </dd>
-  </dl></div>
-  <div class="col-xs-6  col-xs-3"><dt>Hours</dt>
-    <dd>
-      <ul>
-        <li>Monday - Friday</li>
-        <li>8:00am - 4:00pm</li>
-        <li>Saturday</li>
-        <li>8:00am - 12:00pm</li>
-         <li>Sunday</li>
-        <li>Closed</li>
-      </ul>
-
-
-
-    </dd></div>
-    <div class="col-xs-6  3">
-
-      <img class="img pickup-logo" src="/modules/core/client/img/brand/pickup.png">
 
 
 
@@ -309,26 +612,31 @@
 
 
     </div>
-    </div>
-
-
-
-    <div class="row row-end-footer">
-
-
-
-      <footer>
-        <p class="p copy-rights"> home | equipment | services | location | delivery | about us </p>
-
-      </footer>
-
-    </div>
 
 
 
 
 
 
+    <!--<div class="col-xs-6  3">-->
+
+      <!--<img class="img pickup-logo" src="/modules/core/client/img/brand/pickup.png">-->
+
+    <!--</div>-->
+
+  </div>
 
 
-  </section>
+
+
+
+
+
+
+
+
+
+
+</section>
+
+

@@ -20,6 +20,18 @@ var ArticleSchema = new Schema({
     trim: true,
     required: 'Title cannot be blank'
   },
+  price: {
+    type: String,
+    default: ''
+  },
+  contactname: {
+    type: String,
+    default: ''
+  },
+  contactphone: {
+    type: String,
+    default: ''
+  },
   content: {
     type: String,
     default: '',

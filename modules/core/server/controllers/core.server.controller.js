@@ -1,5 +1,9 @@
 'use strict';
 
+
+var nodemailer = require('nodemailer');
+var transporter = nodemailer.createTransport();
+
 /**
  * Render the main application page
  */
@@ -39,4 +43,20 @@ exports.renderNotFound = function (req, res) {
       res.send('Path not found');
     }
   });
+};
+
+/**
+ *
+ */
+exports.sendMail = function(req, res){
+
+  var data = req.body;
+
+  transporter.sendMail({
+    from: 'christian.soto9@upr.edu',
+      to: 'christian.soto9@upr.edu',
+      subject: 'test',
+      text: 'text'
+  });
+  res.json(data);
 };

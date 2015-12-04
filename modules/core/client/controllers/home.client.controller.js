@@ -2,26 +2,87 @@
 
 var homeController = angular.module('core');
 
-homeController.controller('HomeController', ['$scope', 'Authentication',
-  function ($scope, Authentication) {
+homeController.controller('HomeController', ['$scope', 'Authentication', '$uibModal', '$log', '$http',
+  function ($scope, Authentication, $uibModal, $log, $http) {
 
 
-    // This provides Authentication context.
-    $scope.authentication = Authentication;
+      // This provides Authentication context.
+      $scope.authentication = Authentication;
+
+
+
+      //$scope.classifieds = [{
+      //    "title":"title text",
+      //    "price":"250 omo",
+      //    "contactname":"herbert soto",
+      //    "contactphone":"7873061715",
+      //    "description":"description text"
+      //},{
+      //    "title":"Example",
+      //    "price":"300 omo",
+      //    "contactname":"Example",
+      //    "contactphone":"7873061715",
+      //    "description":"example text"
+      //}];
+
+
+
+
+      $scope.open = function (template) {
+
+          var modalInstance = $uibModal.open({
+              animation: $scope.animationsEnabled,
+              templateUrl: 'modules/credit/client/views/'+ template +'.client.view.html',
+
+              controller: function ($scope, $uibModalInstance, $http) {
+
+
+
+                  $scope.ok = function () {
+                      $uibModalInstance.ok();
+
+                  };
+
+                  $scope.cancel = function () {
+                      $uibModalInstance.dismiss('cancel');
+                  };
+
+
+              },
+              size: ''
+          });
+
+
+      };
+
+
+
+
+      $scope.status = {
+          isopen: true
+      };
+
+      $scope.toggled = function(open) {
+          $log.log('Dropdown is now: ', open);
+      };
+
+      $scope.toggleDropdown = function($event) {
+          $event.preventDefault();
+          $event.stopPropagation();
+          $scope.status.isopen = !$scope.status.isopen;
+      };
+
 
 
   }
 
-
-
 ]);
 
-
 homeController.controller('HomeCarouselController', ['$scope', 'Authentication',
-    function ($scope, Authentication) {
+    function ($scope, Authentication, $uibModal, $log) {
 
         $scope.myInterval = 2500;
-        $scope.noWrapSlides = false;
+
         var slides = $scope.slides = [];
         var currIndex = 0;
 
@@ -34,31 +95,9 @@ homeController.controller('HomeCarouselController', ['$scope', 'Authentication',
 
         };
 
-        for(var i=0; i<9; i++){
+        for(var i=0; i<9; i++) {
             $scope.addSlide();
         }
-
-        //$scope.slides = [{
-        //    image: '/modules/core/client/img/brand/banner1.png'
-        //}, {
-        //    image: '/modules/core/client/img/brand/banner2.png'
-        //}, {
-        //    image: '/modules/core/client/img/brand/banner3.png'
-        //}, {
-        //    image: '/modules/core/client/img/brand/banner4.png'
-        //}, {
-        //    image: '/modules/core/client/img/brand/banner5.png'
-        //}, {
-        //    image: '/modules/core/client/img/brand/banner6.png'
-        //}, {
-        //    image: '/modules/core/client/img/brand/banner7.png'
-        //}, {
-        //    image: '/modules/core/client/img/brand/banner8.png'
-        //}, {
-        //    image: '/modules/core/client/img/brand/banner9.png'
-        //}];
-
-
 
     }
 
@@ -66,6 +105,19 @@ homeController.controller('HomeCarouselController', ['$scope', 'Authentication',
 
 ]);
 
+
+
+homeController.controller('HomeModalController', ['$scope', 'Authentication', '$uiModal', '$log',
+    function ($scope, Authentication, $uibModal, $log) {
+
+
+
+
+
+
+
+
+    }]);
 
 
 
