@@ -1,5 +1,13 @@
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
+.row.video-promotion-row{
+    height: 500px;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+
 p.ng-binding {
     text-align: right;
 }
@@ -17,7 +25,7 @@ h4.list-group-item-heading.ng-binding {
     margin-left: 10px;
     width: 700px;
 }
-.col-xs-12.latest-clasified {
+.col-xs-8.latest-clasified {
     position: absolute;
     height: 390px;
     width: 700px;
@@ -593,6 +601,20 @@ p.p.copy-rights {
 .col-xs-8.misc-col-two{
     background: transparent;
 }
-.row.misc-item-row{
+.row.misc-item-row {
     background: white;
+    padding: 0;
+    margin: 0;
+    width: 700px;
+    margin-left: -5px;
+}
+.col-xs-8.latest-clasified {
+    width: 700px;
+    height: 400px;
+}
+
+.col-sm-12.final-video-promotion{
+    margin: 0;
+    padding: 0;
+    margin-left: 30px;
 }

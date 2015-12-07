@@ -37,6 +37,11 @@ var ArticleSchema = new Schema({
     default: '',
     trim: true
   },
+  image: {
+    type: String,
+    default: ''
+
+  },
   user: {
     type: Schema.ObjectId,
     ref: 'User'

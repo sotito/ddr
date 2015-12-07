@@ -444,14 +444,25 @@
 
       </div>
       <div class="row misc-item-row">
-        <div class="col-xs-12 latest-clasified">
+        <div class="col-xs-8 latest-clasified">
 
 
         <section ng-controller="ArticlesController" ng-init="find()">
           <div class="list-group">
             <a ng-repeat="article in articles" ui-sref="articles.view({articleId: article._id})" class="list-group-item">
+              <div class="row">
 
               <h4 class="list-group-item-heading" ng-bind="article.title"></h4>
+
+              <div class="col-xs-3">
+                <img src="" class="img-item-one-classified">
+
+
+
+              </div>
+              <div class="col-xs-9">
+
+
              <p>Price: $ {{article.price}}</p>
 
               <p>Contact: {{article.contactname}}</p>
@@ -464,6 +475,8 @@
                 <span ng-bind="article.user.displayName"></span>
 
               </small>
+                </div>
+              </div>
             </a>
           </div>
           <div class="alert alert-warning text-center" ng-if="articles.$resolved && !articles.length">
@@ -472,56 +485,16 @@
         </section>
 
 
-
-
-
-
-          <!--<div ng-repeat="classified in classifieds" class="row classifieds">-->
-            <!--<div class="col-xs-3">-->
-              <!--<img src="" class="img-item-one-classified">-->
-
-
-
-            <!--</div>-->
-            <!--<div class="col-xs-9">-->
-
-              <!--<p>Title:  {{classified.title}}</p>-->
-              <!--<p>Price: ${{classified.price}}</p>-->
-              <!--<p>{{classified.contactname}}</p>-->
-              <!--<p>{{classified.contactphone}}</p>-->
-
-              <!--<p>Description: {{classified.description}}</p>-->
-
-
-
-              <!--<hr>-->
-            <!--</div>-->
-
-
-
-
-          <!--</div>-->
-
-
-
-
-
-
-
-        <!--</div>-->
-
-
-
       </div>
 
 
-
+</div>
 
     </div>
     <div class="col-xs-4 misc-col-two">
 
 
-      <div class="row">
+      <div class="row video-promotion-row">
 
         <div class="col-sm-12 video-promotion">
 
@@ -532,8 +505,8 @@
             </div>
 
             <div class="row">
-              <div class="col-sm-12">
-                <!--<iframe width="%100" height="%100" src="https://www.youtube.com/embed/bCehkkTTeMk" frameborder="0" allowfullscreen></iframe>-->
+              <div class="col-sm-12 final-video-promotion">
+                <iframe width="%100" height="300px" src="https://www.youtube.com/embed/bCehkkTTeMk" frameborder="0" allowfullscreen></iframe>
               </div>
             </div>
 
@@ -541,7 +514,7 @@
 
           <div class="row">
             <div class="col-sm-12">
-              <p>Dustless Blasting en Acción disponible para la Renta</p>
+              <p>Dustless Blasting in ACTION, Available for rent now!</p>
             </div>
           </div>
 
@@ -613,16 +586,7 @@
 
     </div>
 
-
-
-
-
-
-    <!--<div class="col-xs-6  3">-->
-
-      <!--<img class="img pickup-logo" src="/modules/core/client/img/brand/pickup.png">-->
-
-    <!--</div>-->
+    
 
   </div>
 
